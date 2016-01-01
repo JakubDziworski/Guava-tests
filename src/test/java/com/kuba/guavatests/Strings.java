@@ -1,4 +1,4 @@
-package com.kuba;
+package com.kuba.guavatests;
 
 import com.google.common.base.CharMatcher;
 import com.google.common.base.Joiner;
@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import java.util.List;
 
-public class Strings extends BaseTest{
+public class Strings extends MethodLogger {
 
     @Test
     public void joiners() throws Exception {
@@ -29,6 +29,12 @@ public class Strings extends BaseTest{
         System.out.printf("%s -> %s",input,output);
     }
 
+    @Test
+    public void charmatcher() throws Exception {
+        String input = "12AAAstring23BD";
+        final String output = CharMatcher.JAVA_LOWER_CASE.or(CharMatcher.JAVA_DIGIT).removeFrom(input);
+        System.out.printf("%s -> %s",input,output);
+    }
 
 
 

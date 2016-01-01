@@ -23,12 +23,10 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="guava" />
-        <module name="untitled" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="guava" target="1.5" />
-      <module name="untitled" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
